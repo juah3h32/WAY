@@ -6,6 +6,7 @@
     background: none;
     padding: 0 20px;
     position: block;
+    width: auto;
 }
 
 .card-contenedor {
@@ -77,26 +78,6 @@
     display: inline-block;
     padding: 0 15px;
     color: #f0522a;
-}
-
-@media(min-width:150px) and (max-width:640px) {
-    .card-contenedor {
-        display: block;
-        width: 150px;
-    }
-    .contenedor-f {
-        height: 100vh;
-    }
-    .hede {
-        padding: 20px 20px 5px 20px;
-        border: none;
-    }
-    .descripcion-card {
-        padding: 5px 20px 20px 20px;
-    }
-    .hede h4 {
-        margin: 0;
-    }
 }
 
 @media(max-width:640px) {
