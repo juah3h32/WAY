@@ -6,7 +6,6 @@
     background: none;
     padding: 0 20px;
     position: block;
-    width: auto;
 }
 
 .card-contenedor {
@@ -83,7 +82,7 @@
 @media(max-width:640px) {
     .card-contenedor {
         display: block;
-        width: 450px;
+        max-width: 250px;
     }
     .contenedor-f {
         height: 100vh;
