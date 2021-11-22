@@ -82,7 +82,7 @@
 @media (min-width:140px) {
     .card-contenedor {
         display: block;
-        max-width: 150px;
+        max-width: 350px;
     }
     .contenedor-f {
         height: 100vh;
