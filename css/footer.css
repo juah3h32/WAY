@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*El valor absolute en el atributo position permite posicionar elementos de manera absoluta
+La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes*/
+
+.footer {
+    background-color: var(--theme-color);
+    padding: 70px;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    text-align: justify;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+/*CREAMOS UN CONTENIDO VACIO CON UN BACKGROUND PARA DAR ESTILO DE LINEA*/
+
+.footer-col h4::before {
+    content: "";
+    left: 0;
+    bottom: -10px;
+    background-color: var(--secundary-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    position: absolute;
+}
+
+.footer-col ul li::not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+/*ANIMACIÓN AL PASAR MOUSE SOBRE EL FOOTER TEXTO
+LE DECIMOS QUE SE MUEVA 8 PX AL PASAR EL MOUSE*/
+
+.footer-col ul li a:hover {
+    color: var(--text-color);
+    padding-left: 8px;
+}
+
+.footer-col .social-links {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--theme-color);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: var(--text-color);
+}
+
+
+/*RESPONSIVE FOOTER*/
+
+@media(max-width:767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

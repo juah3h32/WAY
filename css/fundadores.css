@@ -1,0 +1,120 @@
+.contenedor-f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background: none;
+    padding: 0 20px;
+    position: block;
+}
+
+.card-contenedor {
+    display: flex;
+    width: 980px;
+    height: auto;
+    background: var(--text-color);
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: -1;
+}
+
+.hede {
+    border-right: 1px solid #dddd;
+    position: relative;
+}
+
+.descripcion-card {
+    background: var(--theme-color);
+}
+
+.hede,
+.descripcion-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.hede a {
+    position: relative;
+    display: block;
+}
+
+.hede img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.hede a:hover img {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, .1);
+}
+
+.hede h2 {
+    color: #f0522a;
+}
+
+.hede h4 {
+    color: var(--text-color-inverse);
+}
+
+.descripcion-card {
+    position: relative;
+}
+
+.descripcion-card p {
+    margin: 20px 30px;
+}
+
+.descripcion-card .social {
+    margin-top: 25px;
+}
+
+.descripcion-card .social a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #f0522a;
+}
+
+@media(max-width:640px) {
+    .card-contenedor {
+        display: block;
+        width: 450px;
+    }
+    .contenedor-f {
+        height: 100vh;
+    }
+    .hede {
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+    .descripcion-card {
+        padding: 5px 20px 20px 20px;
+    }
+    .hede h4 {
+        margin: 0;
+    }
+}
+
+@media(min-width:640px) and (max-width:980px) {
+    .card-contenedor {
+        display: block;
+        width: 600px;
+    }
+    .contenedor-f {
+        height: 100vh;
+    }
+    .hede {
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+    .descripcion-card {
+        padding: 5px 20px 20px 20px;
+    }
+    .hede h4 {
+        margin: 0;
+    }
+}
