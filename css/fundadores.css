@@ -79,7 +79,7 @@
     color: #f0522a;
 }
 
-@media(min-width:640px) {
+@media(min-width:150px) and (max-width:640px) {
     .card-contenedor {
         display: block;
         width: 150px;
