@@ -2,8 +2,8 @@
     "short_name": "Ejemplo",
     "name": "Ejemplo de manifest juanpa",
     "start_url": "index.html",
-    "background_color": "#3498db",
-    "theme_color": "#3498db",
+    "background_color": "#000000",
+    "theme_color": "#000000",
     "display": "standalone",
     "orientation": "portrait",
 
