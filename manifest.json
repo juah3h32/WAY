@@ -1,0 +1,53 @@
+{
+    "short_name": "Ejemplo",
+    "name": "Ejemplo de manifest juanpa",
+    "start_url": "index.html",
+    "background_color": "#3498db",
+    "theme_color": "#3498db",
+    "display": "standalone",
+    "orientation": "portrait",
+
+
+
+    "icons": [{
+            "src": "img/Icons/72x72.jpg",
+            "type": "image/jpg",
+            "sizes": "72x72"
+        },
+        {
+            "src": "img/Icons/96x96.jpg",
+            "type": "image/jpg",
+            "sizes": "96x96"
+        },
+        {
+            "src": "img/Icons/128x128.jpg",
+            "type": "image/jpg",
+            "sizes": "128x128"
+        },
+        {
+            "src": "img/Icons/144x144.jpg",
+            "type": "image/jpg",
+            "sizes": "144x144"
+        },
+        {
+            "src": "img/Icons/152x152.jpg",
+            "type": "image/jpg",
+            "sizes": "152x152"
+        },
+        {
+            "src": "img/Icons/192x192.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/Icons/384x384.jpg",
+            "type": "image/jpg",
+            "sizes": "384x384"
+        },
+        {
+            "src": "img/Icons/512x512.jpg",
+            "type": "image/jpg",
+            "sizes": "512x512"
+        }
+    ]
+}
