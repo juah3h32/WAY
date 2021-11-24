@@ -15,10 +15,12 @@ self.addEventListener('install', evento => {
                 'css/index.css',
                 'img/vector.png',
                 'img/no-img.jpeg',
+                'img/found.jpg',
                 'css/footer.css',
                 'img/wave.svg',
                 'js/app.js',
-                'pages/offline.html'
+                'pages/offline.html',
+                'css/offline.css'
 
             ]);
         });
@@ -84,7 +86,7 @@ self.addEventListener('fetch', evento => {
         //si ocurre un error, en nuestro caso no hay conexión
         if (evento.request.headers.get('accept').includes('text/html')) {
             //si lo que se pide es un archivo html muestra nuestra página offline que esta en cache
-            return caches.match('/pages/offline.html');
+            return caches.match('pages/offline.html');
         }
 
     });
