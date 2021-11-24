@@ -29,6 +29,8 @@ self.addEventListener('install', evento => {
     const cacheInmutable = caches.open(CACHE_INMUTABLE)
         .then(cache => {
             cache.add('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+            cache.add('css/offline.css');
+            cache.add('pages/offline.html');
         });
 
     //Indicamos que la instalación espere hasta que las promesas se cumplan
