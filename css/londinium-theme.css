@@ -2644,6 +2644,9 @@ a.list-group-item-info.active:focus {
     margin-bottom: 20px;
     background-color: var(--theme-color);
     color: var(--text-color);
+    border: 2px solid var(--theme-color);
+    border-radius: 1rem;
+    padding: 1.2rem 1rem;
 }
 
 .panel .form-group:first-child,
@@ -2661,7 +2664,8 @@ a.list-group-item-info.active:focus {
     font-size: 12px;
     border-color: #ddd;
     box-shadow: none;
-    border-radius: 0;
+    border: 2px solid var(--theme-color);
+    border-radius: .1rem;
 }
 
 input[type=text],
