@@ -824,7 +824,7 @@ blockquote {
         margin: 15px 15px 15px 0;
     }
     .navbar-form .form-group {
-        padding: 15px;
+        padding: 12px;
         margin-bottom: 0;
         display: inline-block;
         vertical-align: middle;
@@ -2247,6 +2247,7 @@ a.list-group-item-info.active:focus {
 /*===== Panels =====*/
 
 .panel {
+    padding: 18px;
     border-radius: 2px;
     margin-bottom: 35px;
     box-shadow: none;
@@ -2390,10 +2391,11 @@ a.list-group-item-info.active:focus {
 /* Panel title */
 
 .panel-title {
-    float: left;
     display: block;
+    margin-bottom: 20px;
     font-size: 12px;
-    padding: 11px 12px 12px 12px;
+    padding: auto;
+    text-align: justify;
 }
 
 .panel-title>i {
@@ -2685,7 +2687,8 @@ fieldset[disabled] .form-control {
 }
 
 .form-actions {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 
@@ -2743,8 +2746,6 @@ fieldset[disabled] .form-control {
 .form-bordered .form-group {
     border-top: 1px solid #eeeeee;
     margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .form-bordered .panel .form-group:first-child {
@@ -2763,7 +2764,7 @@ fieldset[disabled] .form-control {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     margin: 0 0 20px 0;
-    padding: 16px 14px;
+    padding: 10px 10px;
 }
 
 .form-horizontal.form-separate .form-group {
@@ -3548,6 +3549,7 @@ select[multiple] {
 /* ===== Buttons ===== */
 
 .btn {
+    margin-bottom: 20px;
     padding: 7px 16px 8px 16px;
     font-size: 12px;
     font-weight: 600;

@@ -5,7 +5,7 @@ import tiendabd, { enviar, consultar, crearEtiqueta } from './funciones.js';
 empleamos la función de tindabd para crear la base de datos tienda
 y la tabla de productos, para crear la tabla debemos indicar los atributos
 ++id indica que el id es auto incremental*/
-let bd = tiendabd("Tienda", { productos: `++id,nombre, precio,descripcion` });
+let bd = tiendabd("Tienda", { productos: `nombre, correo,descripcion` });
 
 
 /*Genermaos un objeto para cada elemento del formulario que
@@ -15,7 +15,7 @@ Nota: recuerda que el nombre que esta entre paretesis es el nombre de
 los id de la etiqueta html*/
 
 //Objetos para acceder a lso input del formulario
-const clave_prod = document.getElementById("clave");
+
 const nombre_prod = document.getElementById("nombre");
 const correo_prod = document.getElementById("correo");
 /*Objeto para acceder a etiqueta que nos mostrará un mesaje en la 
@@ -24,7 +24,7 @@ const desc_prod = document.getElementById("descripcion");
 const mesajeSinRegistros = document.getElementById("siRegistros");
 //Objetos para acceder a los botones del formulario
 const btEnviar = document.getElementById("enviar");
-const btModificar = document.getElementById("modificar");
+
 
 
 
@@ -47,7 +47,7 @@ btEnviar.onclick = (evento) => {
     Nota: Recordar que flag retorna true si se gaurdo el registro y flase si no*/
     let flag = enviar(bd.productos, {
         nombre: nombre_prod.value,
-        precio: correo_prod.value,
+        correo: correo_prod.value,
         descripcion: desc_prod.value
     });
 
@@ -60,39 +60,6 @@ btEnviar.onclick = (evento) => {
 
     }
 }
-
-/*Evento click para ejecutar la modificación de datos, 
-se activa al presionar el boton modificar del formulario*/
-btModificar.onclick = (evento) => {
-    //Recuperamos la clave del producto que se muestra en el input del formulario
-    const id = parseInt(clave_prod.value || 0);
-    //Si existe un id
-    if (id) {
-        /*Ejecutamos la modificación, update requiere la clave del producto
-        y los valores a modificar tomando los valores del formulario*/
-        bd.productos.update(id, {
-            nombre: nombre_prod.value,
-            precio: correo_prod.value,
-            descripcion: desc_prod.value
-        }).then((resultado) => { //si se realiza la modificación
-            if (resultado) {
-                //Limpiamos el formulario y recargamos la tabla
-                console.log("Modificación realizada");
-                nombre_prod.value = "";
-                correo_prod.value = ""
-                desc_prod.value = "";
-                cargarTabla();
-
-            } else {
-                console.log("No se aplicaron los cambios");
-
-            }
-
-        })
-    }
-}
-
-
 
 /*Función que agrega a la tabla cada producto registrado */
 function cargarTabla() {
@@ -120,33 +87,14 @@ function cargarTabla() {
                     crearEtiqueta("td", tr, (td) => {
                         /*Asignamos el valor de cada atributo del producto a la nueva columna
                         la validación indica que si el campo es el de precio se le agrege un signo de $*/
-                        td.textContent = productos.precio === productos[atributo] ? `$ ${productos[atributo]}` : productos[atributo];
+                        td.textContent = productos.correo === productos[atributo] ? ` ${productos[atributo]}` : productos[atributo];
                     })
                 }
-                //Creamos una nueva columna  para el icono de lapiz para modificar
-                crearEtiqueta("td", tr, (td) => {
-                        crearEtiqueta("i", td, (i) => {
-                            i.className += "icon-pencil";
-                            //Le asignamos como identificador la calve del producto del renglón
-                            i.setAttribute(`data-id`, productos.id);
-                            //Indicamos que si precionamos el lapiz se activa la función btnEditar
-                            i.onclick = btnEditar;
-                        })
-                    })
-                    //Creamos una nueva columna  para el icono de menos para eliminar
-                crearEtiqueta("td", tr, (td) => {
-                    crearEtiqueta("i", td, (i) => {
-                        i.className += "icon-minus";
-                        //Le asignamos como identificador la calve del producto del renglón
-                        i.setAttribute(`data-id`, productos.id);
-                        //Indicamos que si precionamos el lapiz se activa la función btnEliminar
-                        i.onclick = btnEliminar;
-                    })
-                })
+
             })
         } else {
             //Si no hay productos registrados mostramos el mensaje bajo el encabezado de la tabla
-            mesajeSinRegistros.textContent = "No existen productos registrados";
+            mesajeSinRegistros.textContent = "No existen comentarios acerca de WAY";
         }
     })
 
@@ -158,9 +106,9 @@ function btnEditar(evento) {
     //Realizamos una consulta del producto que tiene la clave recuperada
     bd.productos.get(id, producto => {
         //Asignamos al formulario el valor correspondiente del producto seleccionado
-        clave_prod.value = producto.id || 0;
+
         nombre_prod.value = producto.nombre || "";
-        correo_prod.value = producto.precio || "";
+        costo_prod.value = producto.correo || "";
         desc_prod.value = producto.descripcion || "";
 
     })

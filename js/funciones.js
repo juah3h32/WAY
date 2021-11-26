@@ -89,9 +89,9 @@ const ordenarCampos = producto => {
     objProducto = {
             /*asignamos al objto vacio cada columan con el valor del producto
             que se recibe*/
-            id: producto.id,
+
             nombre: producto.nombre,
-            correo: producto.precio,
+            correo: producto.correo,
             descripcion: producto.descripcion
         }
         //Retornamos el objeto con el producto ordenado

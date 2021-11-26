@@ -128,7 +128,7 @@
 
 
 /* # General styles
-================================================== */
+  ================================================== */
 
 
 /* ===== Template animations =====*/
@@ -264,7 +264,7 @@ label.error {
 
 
 /* # Statistics, info blocks and graphs
-================================================== */
+  ================================================== */
 
 
 /*===== Page title statistics =====*/
@@ -357,7 +357,7 @@ label.error {
 
 .info-buttons a {
     display: block;
-    color: #ffffff;
+    color: #505050;
     padding: 10px 12px;
     text-align: center;
     position: relative;
@@ -730,7 +730,7 @@ ul.list-justified li {
 
 
 /* # Custom widgets and layout elements
-================================================== */
+  ================================================== */
 
 
 /*===== Media page option bar =====*/
@@ -1322,7 +1322,7 @@ ul.list-justified li {
 
 
 /* # Page layout
-================================================== */
+  ================================================== */
 
 
 /*===== Boxed page layout =====*/
@@ -1368,7 +1368,7 @@ body.boxed {
 }
 
 .page-content {
-    margin: 0 25px 0 265px;
+    margin: 0 50px 0 50px;
     position: block;
 }
 
@@ -2432,7 +2432,7 @@ body.boxed {
 
 
 /* # Plugins
-================================================== */
+  ================================================== */
 
 
 /*===== Date range picker ====*/
@@ -4157,8 +4157,8 @@ body>.jGrowl {
 
 
 /*
- * Table styles
- */
+   * Table styles
+   */
 
 .dataTable {
     border-collapse: collapse;
@@ -4253,8 +4253,8 @@ tr.shown td.details-control {
 
 
 /*
- * Control feature layout
- */
+   * Control feature layout
+   */
 
 .dataTables_wrapper {
     position: relative;
@@ -6647,7 +6647,7 @@ li.plupload_droptext {
 
 
 /* # Invoice template styles
-================================================== */
+  ================================================== */
 
 .invoice-header ul {
     margin-bottom: 0;
@@ -6733,7 +6733,7 @@ li.plupload_droptext {
 
 
 /* # Chat layout
-================================================== */
+  ================================================== */
 
 .chat {
     max-height: 570px;
@@ -6975,7 +6975,7 @@ li.plupload_droptext {
 
 
 /* # Error and Login pages styling
-================================================== */
+  ================================================== */
 
 .error-wrapper {
     padding-bottom: 35px;
