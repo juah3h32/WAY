@@ -7,7 +7,11 @@
     
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/diseños.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/londinium-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,117 +49,132 @@
             </ul>  
         </nav>
     </header> 
- 
-    <section class="des">
-            <div class="des-info">
-                <h1 class="des-title">Seguridad a donde vayas</h1>
-                <a href="index.html"><p>INICIO ></a> DISEÑOS 
-                </p>
-            </div>
-        </section>
-    </div>
+    <!-- Page content -->
+    <div class="page-content">
+      <!-- Page header -->
+      <div class="page-header">
+        <div class="page-title">
+          <h3>
+            ¡DEJANOS TU COMENTARIO!
+            <small>WAY</small>
+          </h3>
+        </div>
+      </div>
+      <!-- /page header -->
 
-    <div class="gallery-container">
-        
-        <div class="gallery-item">
-        <a href="#">     
-            <img src="img/Ropa/m1.jpeg" alt="" class="gallery__img">
+      <!-- Vertical form outside panel -->
+      <form role="form">
+        <div class="block">
+          <h6 class="heading-hr">¡Hola nos alegra que nos contactes!</h6>
+
+          <div class="form-group">
+            <label>Clave:</label>
+            <input type="text" class="form-control" id="clave" readonly />
+          </div>
+
+          <div class="form-group">
+            <label>Nombre:</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+
+          <div class="form-group">
+            <label>Correo:</label>
+            <input type="text" class="form-control" id="correo"/>
             
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/m2.jpeg" alt="" class="gallery__img">
-            
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/m3.jpeg" alt="" class="gallery__img">
-           
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/n1.jpeg" alt="" class="gallery__img">
-            
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/n2.jpeg" alt="" class="gallery__img">
-            
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/n3.jpeg" alt="" class="gallery__img">
-            
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/n1.jpeg" alt="" class="gallery__img">
-            
-        </a>
-        </div>
-        <div class="gallery-item">
-        <a href="#">
-            <img src="img/Ropa/h2.jpeg" alt="" class="gallery__img">
-            
-        </a>
-        </div>
-        
-        
-        
+          </div>
           
-    </div>
-    <footer class="footer" id="contacto" >
-        <div class="contenedor-footer" >
-            <div class="row">
-                <div class="footer-col">
-                    <h4>WAY</h4>
-                    <ul>
-                        <li><a href="index.html">Acerca de nosotros</a></li>
-                        
-                        
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>ATENCIÓN A CLIENTES</h4>
-                    <ul>
-                        <li><a href="#">WAY junto a todo nuestro equipo estamos grandemente agradecidos 
-                        por formar parte de nuestro equipo es por ello que ponemos a su disposición nuestras redes sociales</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>PRODUCTOS</h4>
-                    <ul>
-                        <li><a href="productos.html#playeraH">Playera Hombre</a></li>
-                        <li><a href="productos.html#playeraM">Playera Mujer</a></li>
-                        <li><a href="productos.html#sudaderaH">Sudadera Hombre</a></li>
-                        <li><a href="productos.html#sudaderaM">Sudadera Mujer</a></li>
-                        
-                    </ul>
-                </div>
-                 <div class="footer-col">
-                    <h4>REDES</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/WAY-106754665133584/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/waysafesclothes/"><i class="fab fa-instagram"></i></a>
-                        
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
+
+          <div class="form-group">
+            <label>Comentario:</label>
+            <textarea
+              rows="5"
+              cols="5"
+              class="form-control"
+              id="descripcion"
+            ></textarea>
+          </div>
+
+          <div class="form-actions text-right">
+            <input
+              type="button"
+              value="Enviar"
+              class="btn btn-success"
+              id="enviar"
+            />
+
+            <input
+              type="button"
+              value="Modificar"
+              class="btn btn-warning"
+              id="modificar"
+            />
             
         </div>
-        
-    </footer>
+      </form>
 
-   
+      <!-- Default table -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h6 class="panel-title">
+            <i class="icon-table2"></i> Nuestros Comenarios
+          </h6>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Comentarios</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!--<tr>
+                <td>1</td>
+                <td>Chocolate</td>
+                <td>23</td>
+                <td>Sin azucar</td>
+
+                <td>
+                  <a
+                    href="#"
+                    class="btn btn-default btn-icon btn-xs tip"
+                    title="Edit entry"
+                    ><i class="icon-pencil"></i
+                  ></a>
+                </td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn btn-default btn-icon btn-xs tip"
+                    title="Edit entry"
+                    ><i class="icon-minus"></i
+                  ></a>
+                </td>
+              </tr>-->
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group">
+          <center id="siRegistros" />
+        </div>
+      </div>
+      <!-- /default table -->
+      <!-- /vertical form outside panel -->
+    </div>
+    <!-- /page content -->
+    <!-- Indicamos la referencia al archivo main.js que contiene el proceso de CRUD -->
+    <script src="js/main.js" type="module"></script>
+    <!-- API DEXIE - Api para manejo de base de datos indexBD -->
+    <script
+      src="js/dexie.min.js"
+      integrity="sha512-ZxOA8l07uAOW9hOwLustU8G5Pa9WGUplctjW6OSPYT9VZiS6PzEX7tJdZvUQLswakTUkACm5/rykzrDhds2TJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+ 
+    
+    
 
 </body>
