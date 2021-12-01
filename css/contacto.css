@@ -19,7 +19,7 @@
 }
 
 .imagen-contacto {
-    object-fit: cover;
+    object-fit: fill;
     background-image: url(../img/fondo.jpg);
     background-position: center center;
     background-size: cover;
@@ -29,7 +29,7 @@
 }
 
 .imagen-contactoF {
-    object-fit: cover;
+    object-fit: fill;
     background-image: url(../img/Redes/facebook.jpg);
     background-position: center center;
     background-size: cover;
@@ -39,7 +39,7 @@
 }
 
 .imagen-contactoI {
-    object-fit: cover;
+    object-fit: fill;
     background-image: url(../img/Redes/instagram.jpg);
     background-position: center center;
     background-size: cover;
@@ -49,7 +49,7 @@
 }
 
 .imagen-contactoW {
-    object-fit: cover;
+    object-fit: fill;
     background-image: url(../img/Redes/whatsapp.jpg);
     background-position: center center;
     background-size: cover;
