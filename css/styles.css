@@ -665,6 +665,7 @@ label.error {
 /*===== Other styles =====*/
 
 .block {
+    grid-column: span 1;
     margin-top: 7rem;
 }
 
@@ -783,7 +784,7 @@ ul.list-justified li {
         display: block;
     }
     .bar .form-control {
-        width: 100%;
+        width: 70%;
     }
     .bar .btn {
         margin-top: 2px;

@@ -2654,6 +2654,7 @@ a.list-group-item-info.active:focus {
     border: 2px solid var(--theme-color);
     border-radius: 1rem;
     padding: 1.2rem 1rem;
+    size: 12rem;
 }
 
 .panel .form-group:first-child,
