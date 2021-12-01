@@ -2247,6 +2247,7 @@ a.list-group-item-info.active:focus {
 /*===== Panels =====*/
 
 .panel {
+    display: block;
     padding: 18px;
     width: 100%;
     border-radius: 20px;
