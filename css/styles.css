@@ -1367,16 +1367,12 @@ body.boxed {
     position: relative;
 }
 
-.gente {
-    text-align: center;
-}
-
 .si {
     display: grid;
     gap: 1rem;
     grid-auto-rows: 52rem;
     background-color: var(--theme-color);
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 .si h2 {
