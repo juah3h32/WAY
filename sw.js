@@ -14,7 +14,6 @@ self.addEventListener('install', evento => {
                 'index.html',
                 'css/index.css',
                 'bootstrap/4.1.3/css/bootstrap.min.css',
-
                 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap',
                 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css',
                 'https://img.icons8.com/material-outlined/24/000000/menu--v1.png',
@@ -86,8 +85,8 @@ self.addEventListener('fetch', evento => {
                             cache.put(evento.request, resWeb);
                             //Mandamos llamar la limpieza al cargar un nuevo archivo
                             //estamos indicando que se limpiará el cache dinamico y que 
-                            //solo debe haber 25 archivos
-                            limpiarCache(CACHE_DINAMICO, 25);
+                            //solo debe haber 50 archivos
+                            limpiarCache(CACHE_DINAMICO, 50);
                         })
                         //se retorna el archivo recuperado para visualizar la página
                     return resWeb.clone();
