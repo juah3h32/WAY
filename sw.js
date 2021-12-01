@@ -15,8 +15,6 @@ self.addEventListener('install', evento => {
                 'css/index.css',
                 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
                 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swa',
-                'https://fonts.googleapis.com',
-                'https://fonts.gstatic.com',
                 'manifest.json',
                 'img/vector.png',
                 'img/no-img.jpeg',
