@@ -2264,6 +2264,7 @@ a.list-group-item-info.active:focus {
 
 .panel-heading {
     display: block;
+    z-index: -1;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     padding: 0;
