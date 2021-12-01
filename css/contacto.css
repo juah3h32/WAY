@@ -1,57 +1,68 @@
-.fw300{
-	font-weight: 300;
-}
-.boton{
-	color: white;
-	font-weight: 700;
-	text-decoration: none;
-	font-size: 1.8rem;
-	padding: 1rem 3rem;
-	margin-top: 3rem;
-	display: inline-block;
-	text-align: center;
-	text-transform: uppercase;
-}
-.boton-amarillo{
-	background-color: black;
-}
-.imagen-contacto{
-	background-image: url(../img/fondo.jpg);
-	background-position: center center ;
-	background-size: cover;
-	height: 40rem;
-	display: flex;
-	align-items: center;
-}
-.imagen-contactoF{
-	background-image: url(../img/Redes/facebook.jpg);
-	background-position: center center ;
-	background-size: cover;
-	height: 40rem;
-	display: flex;
-	align-items: center;
-}
-.imagen-contactoI{
-	background-image: url(../img/Redes/instagram.jpg);
-	background-position: center center ;
-	background-size: cover;
-	height: 40rem;
-	display: flex;
-	align-items: center;
-}
-.imagen-contactoW{
-	background-image: url(../img/Redes/whatsapp.jpg);
-	background-position: center center ;
-	background-size: cover;
-	height: 40rem;
-	display: flex;
-	align-items: center;
+.fw300 {
+    font-weight: 300;
 }
 
-.contenido-contacto{
-	flex:1;
-	color: black;
+.boton {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
 }
-.contenido-contacto p{
-	font-size: 2rem;
+
+.boton-amarillo {
+    background-color: black;
+}
+
+.imagen-contacto {
+    object-fit: cover;
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-contactoF {
+    object-fit: cover;
+    background-image: url(../img/Redes/facebook.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-contactoI {
+    object-fit: cover;
+    background-image: url(../img/Redes/instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-contactoW {
+    object-fit: cover;
+    background-image: url(../img/Redes/whatsapp.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: black;
+}
+
+.contenido-contacto p {
+    font-size: 2rem;
 }
