@@ -13,6 +13,11 @@ self.addEventListener('install', evento => {
                 //  '/',
                 'index.html',
                 'css/index.css',
+                'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+                'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swa',
+                'https://fonts.googleapis.com',
+                'https://fonts.gstatic.com',
+                'manifest.json',
                 'img/vector.png',
                 'img/no-img.jpeg',
                 'img/found.jpg',
@@ -75,7 +80,7 @@ self.addEventListener('fetch', evento => {
                             cache.put(evento.request, resWeb);
                             //Mandamos llamar la limpieza al cargar un nuevo archivo
                             //estamos indicando que se limpiará el cache dinamico y que 
-                            //solo debe haber 2 archivos
+                            //solo debe haber 25 archivos
                             limpiarCache(CACHE_DINAMICO, 25);
                         })
                         //se retorna el archivo recuperado para visualizar la página
