@@ -25,6 +25,8 @@
 }
 
 .descripcion-card {
+    align-items: center;
+    text-align: center;
     background: var(--theme-color);
 }
 
