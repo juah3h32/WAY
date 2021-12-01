@@ -665,11 +665,11 @@ label.error {
 /*===== Other styles =====*/
 
 .block {
-    margin-bottom: 35px;
+    margin-top: 7rem;
 }
 
 .block-inner {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: block;
 }
 
@@ -1367,8 +1367,24 @@ body.boxed {
     position: relative;
 }
 
+.gente {
+    text-align: center;
+}
+
+.si {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 52rem;
+    background-color: var(--theme-color);
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+}
+
+.si h2 {
+    text-align: center;
+}
+
 .page-content {
-    margin: 0 50px 0 900px;
+    margin: 20px 20px 20px 20px;
     position: block;
 }
 
@@ -1754,111 +1770,6 @@ body.boxed {
     -moz-border-radius: 0 0 2px 2px;
 }
 
-@media (max-width: 991px) {
-    .page-content {
-        margin: 0 25px 0 25px;
-    }
-    .sidebar-toggle {
-        display: none;
-    }
-    .sidebar {
-        left: -240px;
-        position: fixed;
-    }
-    .sidebar-narrow .sidebar {
-        left: -54px;
-    }
-    .offcanvas-active .sidebar {
-        position: absolute;
-        left: 0;
-    }
-    .offcanvas-active.sidebar-narrow .page-content {
-        margin-left: 79px;
-    }
-    .offcanvas-active .page-content {
-        margin-left: 265px;
-        margin-right: 0;
-        overflow: hidden;
-    }
-    .offcanvas-active .page-content-inner {
-        margin-right: -240px;
-    }
-    .sidebar-narrow.offcanvas-active .page-content-inner {
-        margin-right: -54px;
-    }
-    .sidebar-narrow .page-content {
-        margin-left: 25px;
-    }
-    .sidebar-right .page-content {
-        margin: 0 25px 0 25px;
-    }
-    .sidebar-right.offcanvas-active .sidebar {
-        right: 0;
-    }
-    .sidebar-right .sidebar {
-        left: auto;
-        right: -240px;
-    }
-    .sidebar-right.sidebar-narrow .sidebar {
-        left: auto;
-        right: -54px;
-    }
-    .sidebar-right.sidebar-narrow.offcanvas-active .sidebar {
-        right: 0;
-    }
-    .sidebar-right.sidebar-narrow .page-content {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-    .sidebar-right.offcanvas-active .page-content {
-        margin-right: 265px;
-        margin-left: 0;
-    }
-    .sidebar-right.sidebar-narrow.offcanvas-active .page-content {
-        margin-right: 79px;
-    }
-    .sidebar-right.offcanvas-active .page-content-inner {
-        margin-left: -240px;
-        margin-right: 0;
-    }
-    .sidebar-right.sidebar-narrow.offcanvas-active .page-content-inner {
-        margin-left: -54px;
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .page-content {
-        margin: 0 15px 0 15px;
-    }
-    .sidebar-narrow .page-content {
-        margin-left: 15px;
-    }
-    .offcanvas-active .page-content {
-        margin-left: 255px;
-    }
-    .sidebar-narrow .page-content {
-        margin-left: 15px;
-    }
-    .offcanvas-active.sidebar-narrow .page-content {
-        margin-left: 69px;
-    }
-    .sidebar-right .page-content {
-        margin: 0 15px 0 15px;
-    }
-    .sidebar-right.sidebar-narrow .page-content {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    .sidebar-right.offcanvas-active .page-content {
-        margin-right: 255px;
-    }
-    .sidebar-right.sidebar-narrow.offcanvas-active .page-content {
-        margin-right: 69px;
-        margin-left: 0;
-    }
-}
-
 
 /*===== Sidebar user dropdown ====*/
 
@@ -1992,26 +1903,6 @@ body.boxed {
     float: none;
 }
 
-@media (max-width: 991px) {
-    .user-menu .dropdown-menu {
-        left: 0;
-    }
-    .sidebar-narrow .user-menu .dropdown-menu {
-        left: 54px;
-    }
-    .sidebar-right .user-menu .dropdown-menu {
-        left: auto;
-        right: 0;
-    }
-    .sidebar-right.sidebar-narrow .user-menu .dropdown-menu {
-        right: 54px;
-    }
-    .user-menu .dropdown-menu:before,
-    .user-menu .dropdown-menu:after {
-        content: none;
-    }
-}
-
 
 /*===== Breadcrumbs line and breadcrumb buttons ====*/
 
@@ -2118,108 +2009,10 @@ body.boxed {
     right: 0;
 }
 
-@media (min-width: 768px) {
-    .breadcrumb-buttons {
-        display: block;
-    }
-}
-
-@media (max-width: 767px) {
-    .breadcrumb-line {
-        border: 0;
-        background: none;
-    }
-    .breadcrumb-top {
-        margin: 0 -15px;
-    }
-    .breadcrumb-top .breadcrumb-buttons {
-        margin-right: 0;
-    }
-    .breadcrumb-top .breadcrumb {
-        padding-left: 15px;
-    }
-    .breadcrumb-top .breadcrumb-toggle {
-        right: 3px;
-    }
-    .breadcrumb-buttons {
-        margin-top: -1px;
-        background-color: #fff;
-        width: 100%;
-        border: 1px solid #ddd;
-        z-index: 2;
-    }
-    .breadcrumb-buttons>li {
-        float: none;
-        width: 1%;
-        display: table-cell;
-    }
-    .breadcrumb-buttons>li:first-child {
-        border-left: 0;
-    }
-    .breadcrumb-buttons>li>a .caret {
-        float: right;
-        margin-top: 9px;
-    }
-    .breadcrumb-buttons .dropdown-menu,
-    .breadcrumb-buttons .popup.dropdown-menu.dropdown-menu-right {
-        float: left!important;
-        left: -1px;
-        right: -1px;
-    }
-    .breadcrumb-buttons>li {
-        position: static;
-    }
-    .breadcrumb-buttons .dropdown-menu {
-        margin-top: 2px;
-    }
-    .breadcrumb-buttons .popup-header:before,
-    .breadcrumb-buttons .popup-header:after,
-    .breadcrumb-buttons .dropdown-menu>li:first-child:before,
-    .breadcrumb-buttons .dropdown-menu>li:first-child:after {
-        content: "";
-        border: 0;
-    }
-}
-
-@media (max-width: 479px) {
-    .breadcrumb-buttons>li>a>span,
-    .breadcrumb-buttons>li>a .caret {
-        display: none;
-        float: none;
-    }
-    .breadcrumb-buttons>li {
-        text-align: center;
-    }
-    .breadcrumb-buttons>li>a>i,
-    .language.dropdown>a>img {
-        float: none;
-        margin: 0;
-        display: inline-block;
-    }
-    .breadcrumb-buttons>li>a {
-        height: 36px;
-    }
-}
-
 
 /*===== Footer =====*/
 
-.footer {
-    border-top: 1px solid #ddd;
-    padding: 12px 0;
-    text-align: center;
-    font-size: 11px;
-    color: #777;
-    background-color: #fff;
-}
-
-@media (max-width: 480px) {
-    .footer .icons-group {
-        display: none;
-    }
-}
-
-
+.
 /* ===== Infinite rotation animation ===== */
 
 .overlay {

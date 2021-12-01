@@ -1,0 +1,16 @@
+.sobrante {
+    grid-column: span 1;
+}
+
+.sobrante h2 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.gente {
+    text-align: center;
+}
+
+.panel-default {
+    background-color: var(--theme-color);
+}

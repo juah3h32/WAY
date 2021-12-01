@@ -307,10 +307,14 @@ dd+dt {
 /*===== Other typography =====*/
 
 .heading-hr {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
     padding-bottom: 8px;
     margin-bottom: 20px;
     color: var(--text-color);
+}
+
+.block h6 {
+    margin-left: 1rem;
 }
 
 small.display-block {
@@ -1452,12 +1456,8 @@ a.list-group-item-info.active:focus {
     margin: 8px 0 0 0;
 }
 
-.page-title {
-    float: left;
-}
-
 .page-title h3 {
-    padding: 29px 0;
+    padding: 59px 0;
     margin: 0;
     font-weight: 400;
     line-height: 20px;
@@ -1822,7 +1822,7 @@ a.list-group-item-info.active:focus {
 }
 
 .label-block.text-right {
-    text-align: right;
+    text-align: center;
 }
 
 .label-default {
@@ -2248,9 +2248,14 @@ a.list-group-item-info.active:focus {
 
 .panel {
     padding: 18px;
-    border-radius: 2px;
-    margin-bottom: 35px;
-    box-shadow: none;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15rem;
+    box-shadow: red;
+    overflow: hidden;
+    text-align: left;
+    grid-column: auto;
+    white-space: initial;
 }
 
 .panel .panel-body .panel:last-child {
@@ -2395,6 +2400,8 @@ a.list-group-item-info.active:focus {
     margin-bottom: 20px;
     font-size: 12px;
     padding: auto;
+    background-color: var(--theme-color);
+    color: var(--text-color);
     text-align: justify;
 }
 
@@ -2404,7 +2411,7 @@ a.list-group-item-info.active:focus {
 }
 
 .panel-default>.panel-heading {
-    background-color: #fafafa;
+    background-color: var(--theme-color);
 }
 
 
@@ -2660,12 +2667,12 @@ a.list-group-item-info.active:focus {
 }
 
 .form-control {
-    padding: 7px 9px 8px 9px;
+    padding: 3px 3px 3px 3px;
     font-size: 12px;
     border-color: #ddd;
     box-shadow: none;
     border: 2px solid var(--theme-color);
-    border-radius: .1rem;
+    border-radius: .2rem;
 }
 
 input[type=text],
@@ -2691,7 +2698,7 @@ fieldset[disabled] .form-control {
 }
 
 .form-actions {
-    margin-bottom: 25px;
+    margin: 0px 15px 0px 0px;
     margin-top: 30px;
 }
 
@@ -2807,7 +2814,7 @@ fieldset[disabled] .form-control {
         text-align: left;
     }
     .form-horizontal .control-label.text-right {
-        text-align: right;
+        text-align: center;
     }
 }
 
