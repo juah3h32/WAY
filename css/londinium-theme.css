@@ -2263,6 +2263,7 @@ a.list-group-item-info.active:focus {
 }
 
 .panel-heading {
+    display: block;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     padding: 0;
